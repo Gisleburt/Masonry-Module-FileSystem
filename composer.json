@@ -8,6 +8,11 @@
       "name": "Daniel Mason",
       "email": "daniel.mason@thefoundry.co.uk",
       "role": "Lead developer"
+    },
+    {
+      "name": "Vladimir Hraban",
+      "email": "vladimir.hraban@thefoundry.co.uk",
+      "role": "Developer"
     }
   ],
   "autoload": {
