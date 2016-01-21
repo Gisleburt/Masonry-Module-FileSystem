@@ -1,0 +1,36 @@
+Config:
+  # No config for this module
+Workers:
+  - Foundry\Masonry\Module\FileSystem\Workers\ChangeOwner\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\Copy\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\Delete\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\FileExists\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\FileNotExists\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\MakeDirectory\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\Move\Worker
+  - Foundry\Masonry\Module\FileSystem\Workers\Template\Worker
+Descriptions:
+  Foundry\Masonry\Module\FileSystem\Workers\ChangeOwner\Description:
+    - ChangeOwner
+    - ChOwn
+  Foundry\Masonry\Module\FileSystem\Workers\Copy\Description:
+    - CopyFile
+    - CopyDir
+    - CopyDirectory
+  Foundry\Masonry\Module\FileSystem\Workers\Delete\Description:
+    - DeleteFile
+    - DeleteDir
+    - DeleteDirectory
+  Foundry\Masonry\Module\FileSystem\Workers\FileExists\Description:
+    - FileExists
+  Foundry\Masonry\Module\FileSystem\Workers\FileNotExists\Description:
+    - FileNotExists
+  Foundry\Masonry\Module\FileSystem\Workers\MakeDirectory\Description:
+    - MakeDirectory
+    - MakeDir
+  Foundry\Masonry\Module\FileSystem\Workers\Move\Description:
+    - MoveFile
+    - MoveDir
+    - MoveDirectory
+  Foundry\Masonry\Module\FileSystem\Workers\Template\Description:
+    - FileTemplate

@@ -45,8 +45,5 @@
     "github-protocols": [
       "https"
     ]
-  },
-  "scripts": {
-    "post-autoload-dump" : "vendor/bin/masonry-register register Foundry\\\\Masonry\\\\Module\\\\FileSystem\\\\Module"
   }
 }
