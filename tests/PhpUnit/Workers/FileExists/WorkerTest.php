@@ -152,4 +152,22 @@ class WorkerTest extends AbstractWorkerTest
             (string)$deferredWrapper->getNotificationOutput()
         );
     }
+
+    /**
+     * @test
+     * @covers ::getDescriptionTypes
+     */
+    public function testGetDescriptionTypes()
+    {
+        $worker = new Worker();
+
+        $this->assertCount(
+            1,
+            $worker->getDescriptionTypes()
+        );
+        $this->assertSame(
+            Description::class,
+            $worker->getDescriptionTypes()[0]
+        );
+    }
 }

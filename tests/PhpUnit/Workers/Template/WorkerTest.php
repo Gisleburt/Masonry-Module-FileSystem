@@ -233,4 +233,21 @@ class WorkerTest extends AbstractWorkerTest
         );
     }
 
+    /**
+     * @test
+     * @covers ::getDescriptionTypes
+     */
+    public function testGetDescriptionTypes()
+    {
+        $worker = new Worker();
+
+        $this->assertCount(
+            1,
+            $worker->getDescriptionTypes()
+        );
+        $this->assertSame(
+            Description::class,
+            $worker->getDescriptionTypes()[0]
+        );
+    }
 }
