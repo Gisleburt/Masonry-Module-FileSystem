@@ -1,6 +1,6 @@
 {
-  "name": "foundry/masonry-website-builder",
-  "description": "Easily extensible, basic tools for building/deploying websites.",
+  "name": "foundry/masonry-module-filesystem",
+  "description": "A Masonry module containing file system tools",
   "license": "MIT",
   "minimum-stability": "stable",
   "authors": [
