@@ -12,12 +12,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "Foundry\\Masonry\\Module\\FileSystem": "src/"
+      "Foundry\\Masonry\\Module\\FileSystem\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Foundry\\Masonry\\Module\\FileSystem\\Tests\\": "tests/"
+      "Foundry\\Masonry\\Module\\FileSystem\\Tests\\": "tests/",
+      "Foundry\\Masonry\\Tests\\": "vendor/foundry/masonry/tests/"
     }
   },
   "require": {
