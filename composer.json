@@ -28,7 +28,7 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "foundry/masonry": "dev-develop@dev"
+    "foundry/masonry": "*@dev"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.1",
