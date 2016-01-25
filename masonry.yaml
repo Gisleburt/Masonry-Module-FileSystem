@@ -1,6 +1,6 @@
-config:
+Name: FileSystem
   # No config for this module
-workers:
+Workers:
   Foundry\Masonry\Module\FileSystem\Workers\ChangeOwner\Worker:
   Foundry\Masonry\Module\FileSystem\Workers\Copy\Worker:
   Foundry\Masonry\Module\FileSystem\Workers\Delete\Worker:
@@ -9,7 +9,7 @@ workers:
   Foundry\Masonry\Module\FileSystem\Workers\MakeDirectory\Worker:
   Foundry\Masonry\Module\FileSystem\Workers\Move\Worker:
   Foundry\Masonry\Module\FileSystem\Workers\Template\Worker:
-descriptions:
+Descriptions:
   Foundry\Masonry\Module\FileSystem\Workers\ChangeOwner\Description:
     - ChangeOwner
     - ChOwn
