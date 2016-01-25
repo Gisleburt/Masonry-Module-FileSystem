@@ -58,8 +58,10 @@ class Worker extends AbstractWorker
 
             $deferred->notify("File content generated, saving to {$description->getTarget()}");
 
-            if($this->getFileSystem()->write($description->getTarget(), $processedContents)) {
-                $deferred->resolve("Created '{$description->getTarget()}' from template '{$description->getTemplate()}'");
+            if ($this->getFileSystem()->write($description->getTarget(), $processedContents)) {
+                $deferred->resolve(
+                    "Created '{$description->getTarget()}' from template '{$description->getTemplate()}'"
+                );
                 return;
             }
 

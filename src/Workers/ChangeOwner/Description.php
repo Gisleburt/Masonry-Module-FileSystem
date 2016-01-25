@@ -15,7 +15,6 @@ namespace Foundry\Masonry\Module\FileSystem\Workers\ChangeOwner;
 
 use Foundry\Masonry\Core\AbstractDescription;
 
-
 /**
  * Class Description
  *

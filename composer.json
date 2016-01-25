@@ -8,6 +8,11 @@
       "name": "Daniel Mason",
       "email": "daniel.mason@thefoundry.co.uk",
       "role": "Lead developer"
+    },
+    {
+      "name": "Vladimir Hraban",
+      "email": "vladimir.hraban@thefoundry.co.uk",
+      "role": "Developer"
     }
   ],
   "autoload": {
@@ -23,7 +28,7 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "foundry/masonry": "dev-develop@dev"
+    "foundry/masonry": "*@dev"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.1",
@@ -40,8 +45,5 @@
     "github-protocols": [
       "https"
     ]
-  },
-  "scripts": {
-    "post-autoload-dump" : "vendor/bin/masonry-register register Foundry\\\\Masonry\\\\Module\\\\FileSystem\\\\Module"
   }
 }
