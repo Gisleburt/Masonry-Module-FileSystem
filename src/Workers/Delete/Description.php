@@ -15,7 +15,6 @@ namespace Foundry\Masonry\Module\FileSystem\Workers\Delete;
 
 use Foundry\Masonry\Core\AbstractDescription;
 
-
 /**
  * Class Description
  *
