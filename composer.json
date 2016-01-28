@@ -28,7 +28,7 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "foundry/masonry": "*@dev"
+    "foundry/masonry": "dev-develop@dev"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.1",
@@ -41,9 +41,14 @@
     "symfony/event-dispatcher": "^2.1"
   },
   "config": {
-    "bin-dir": "bin",
     "github-protocols": [
       "https"
     ]
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit"
+    ],
+    "validate-masonry": "Foundry\\Masonry\\ModuleRegister\\Composer\\Plugin::validate"
   }
 }
