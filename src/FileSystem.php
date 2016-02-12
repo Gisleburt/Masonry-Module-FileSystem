@@ -16,15 +16,16 @@ namespace Foundry\Masonry\Module\FileSystem;
  * Wraps file system functionality
  * @package Foundry\Masonry-Builder
  * @see     https://github.com/Visionmongers/Masonry-Builder
+ * @SuppressWarnings(PHPMD.ExcessivePublicCount)
  */
 class FileSystem
 {
-
     /**
      * Wraps copy and is able to copy directories
      * @param string $from Source location
      * @param string $to   Target location
      * @throws \Exception
+     * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      * @return bool
      */
     public function copy($from, $to)
@@ -128,14 +129,14 @@ class FileSystem
 
     /**
      * Wraps mkdir
+     * This method is always recursive.
      * @param string $directory The name of the directory to be created
      * @param int    $mode      Defaults to 0777
-     * @param bool   $recursive Defaults to true, which is different from mkdir
      * @return bool
      */
-    public function makeDirectory($directory, $mode = 0777, $recursive = true)
+    public function makeDirectory($directory, $mode = 0777)
     {
-        return @mkdir($directory, $mode, $recursive);
+        return @mkdir($directory, $mode, true);
     }
 
     /**
