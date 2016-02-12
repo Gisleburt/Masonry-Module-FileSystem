@@ -27,8 +27,8 @@
     }
   },
   "require": {
-    "php": ">=5.5.0",
-    "foundry/masonry": "*@dev"
+    "php": "^5.5 || ^7.0",
+    "foundry/masonry": "^1.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.1",
@@ -41,9 +41,26 @@
     "symfony/event-dispatcher": "^2.1"
   },
   "config": {
-    "bin-dir": "bin",
     "github-protocols": [
       "https"
+    ]
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit",
+      "@validate-masonry"
+    ],
+    "quality": [
+      "vendor/bin/phpcpd src",
+      "vendor/bin/phpcs --standard=phpcs.xml src",
+      "vendor/bin/phpmd src text phpmd.xml",
+      "vendor/bin/phploc src"
+    ],
+    "quality-fix": [
+      "vendor/bin/phpcbf --standard=phpcs.xml src"
+    ],
+    "validate-masonry": [
+      "Foundry\\Masonry\\ModuleRegister\\Composer\\Plugin::validate"
     ]
   }
 }
