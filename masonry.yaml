@@ -33,4 +33,4 @@ Descriptions:
     - MoveDir
     - MoveDirectory
   Foundry\Masonry\Module\FileSystem\Workers\Template\Description:
-    - FileTemplate
+    - Template

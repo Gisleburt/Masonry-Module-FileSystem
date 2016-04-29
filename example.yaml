@@ -1,0 +1,6 @@
+FileSystem\Template:
+  Template: example.tpl
+  Target:   example
+  Params:
+    name: World
+
